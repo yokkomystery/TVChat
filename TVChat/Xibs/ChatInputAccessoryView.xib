@@ -33,6 +33,7 @@
                         <constraint firstAttribute="width" constant="40" id="OJg-Uu-7Va"/>
                         <constraint firstAttribute="height" constant="30" id="RJQ-3V-GFQ"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" image="send-icon"/>
                     <connections>
                         <action selector="tappedSendButton:" destination="-1" eventType="touchUpInside" id="Gxs-cT-hIJ"/>
@@ -65,6 +66,6 @@
         </view>
     </objects>
     <resources>
-        <image name="send-icon" width="128" height="128"/>
+        <image name="send-icon" width="48" height="48"/>
     </resources>
 </document>
