@@ -11,6 +11,7 @@ target 'TVChat' do
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   pod 'Nuke'
+  pod 'ContextMenuSwift'
   target 'TVChatTests' do
     inherit! :search_paths
     # Pods for testing

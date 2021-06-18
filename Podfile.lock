@@ -218,6 +218,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - ContextMenuSwift (0.0.8)
   - Firebase/Analytics (8.1.1):
     - Firebase/Core
   - Firebase/Auth (8.1.1):
@@ -366,6 +367,7 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
+  - ContextMenuSwift
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
@@ -376,6 +378,7 @@ SPEC REPOS:
   trunk:
     - abseil
     - BoringSSL-GRPC
+    - ContextMenuSwift
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -398,6 +401,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  ContextMenuSwift: b4d4066b9ebe47a43f7734a4a6989cf03efe5ad8
   Firebase: 4bb49ae87756034cef870fa3c4006235eb46f475
   FirebaseAnalytics: d6dd061b26a04744cb988c66e29697181152b2a3
   FirebaseAuth: e069ff5736fe9d5dcf61f36244bb1b1ce1897d17
@@ -417,6 +421,6 @@ SPEC CHECKSUMS:
   Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 2cbdfefae4f224ed0b34c36bbf6a8d268f8f0dde
+PODFILE CHECKSUM: 5810b70c28fd84c4341756605051871d6a240f74
 
 COCOAPODS: 1.10.1
