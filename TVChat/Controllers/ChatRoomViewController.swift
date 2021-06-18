@@ -8,8 +8,10 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
+import ContextMenuSwift
 
-class ChatRoomViewController: UIViewController, UISearchBarDelegate {
+class ChatRoomViewController: UIViewController, UISearchBarDelegate, UIGestureRecognizerDelegate {
     var countKeybord:Int = 0
     var searchBarButtonItem: UIBarButtonItem!      // +ボタン
     var tv: Tv?
@@ -52,6 +54,17 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(textFieldDidChange(notification:)),name: UITextView.textDidChangeNotification,
                                                object: chatInputAccessoryView.name)
+        
+        //長押し時の判定
+            // UILongPressGestureRecognizer宣言
+            let longPressRecognizer = UILongPressGestureRecognizer(target: self,
+                                                                   action: #selector(ChatRoomViewController.cellLongPressed(_ :)))
+
+            // `UIGestureRecognizerDelegate`を設定
+            longPressRecognizer.delegate = self
+
+            // tableViewにrecognizerを設定
+            chatRoomTableView.addGestureRecognizer(longPressRecognizer)
         
     }
     
@@ -199,6 +212,34 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
         countKeybord = 0
         print("debug:countKeyboardHide", countKeybord)
     }
+    @objc func cellLongPressed(_ recognizer: UILongPressGestureRecognizer) {
+
+        // 押された位置でcellのPathを取得
+        let point = recognizer.location(in: chatRoomTableView)
+        // 押された位置に対応するindexPath
+        let indexPath = chatRoomTableView.indexPathForRow(at: point)
+            
+        if indexPath == nil {  //indexPathがなかったら
+                
+            return  //すぐに返り、後の処理はしない
+                
+        } else if recognizer.state == UIGestureRecognizer.State.began  {
+            // 長押しされた場合の処理
+                
+            //コンテキストメニューの内容を作成します
+            let mute = ContextMenuItemWithImage(title: "ミュート", image: UIImage(systemName: "speaker.slash.circle.fill")!)
+//            let delete = ContextMenuItemWithImage(title: "削除", image: UIImage(systemName: "trash")!)
+                
+         //コンテキストメニューに表示するアイテムを決定します
+            CM.items = [mute]
+        //表示します
+            CM.showMenu(viewTargeted: chatRoomTableView.cellForRow(at: indexPath!)!,
+                        delegate: self,
+                        animated: true)
+                
+        }
+    }
+    
     
     override var inputAccessoryView: UIView? { chatInputAccessoryView }
 
@@ -282,12 +323,7 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
     
 }
 
-
-
-
-
     
-
 extension ChatRoomViewController: ChatInputAccessoryViewDelegate {
     
     func tappedSendButton(text: String, name: String) {
@@ -358,7 +394,7 @@ extension ChatRoomViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = chatRoomTableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatRoomTableViewCell
         cell.transform = CGAffineTransform(a: 1, b: 0, c: 0, d: -1, tx: 0, ty: 0)
@@ -371,3 +407,68 @@ extension ChatRoomViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+
+// MARK: ContextMenuDelegate
+extension ChatRoomViewController: ContextMenuDelegate {
+    
+    /**
+        コンテキストメニューの選択肢が選択された時に実行される
+        - Parameters:
+            - contextMenu: そのコンテキストメニューだと思われる
+            - cell: **選択されたコンテキストメニューの**セル
+            - targetView: コンテキストメニューの発生源のビュー
+            - item: 選択されたコンテキストのアイテム(タイトルとか画像とかが入ってる)
+            - index: **選択されたコンテキストのアイテムの**座標
+        - Returns: よくわからない(多分成功したらtrue...?)
+     */
+    func contextMenuDidSelect(_ contextMenu: ContextMenu,
+                              cell: ContextMenuCell,
+                              targetedView: UIView,
+                              didSelect item: ContextMenuItem,
+                              forRowAt index: Int) -> Bool {
+        
+        print("コンテキストメニューの", index, "番目のセルが選択された！")
+    print("そのセルには", item.title, "というテキストが書いてあるよ!")
+        
+        //サンプルではtrueを返していたのでとりあえずtrueを返してみる
+        return true
+        
+    }
+    
+    /**
+        コンテキストメニューの選択肢が選択された時に実行される
+        - Parameters:
+            - contextMenu: そのコンテキストメニューだと思われる
+            - cell: **選択されたコンテキストメニューの**セル
+            - targetView: コンテキストメニューの発生源のビュー
+            - item: 選択されたコンテキストのアイテム(タイトルとか画像とかが入ってる)
+            - index: **選択されたコンテキストのアイテムの**座標
+     こちらは値を返さない方
+      (値を返す方との違いがよくわからないが、サンプルでは返す方を使っていたのでそちらを使うことを推奨)
+     */
+    func contextMenuDidDeselect(_ contextMenu: ContextMenu,
+                                cell: ContextMenuCell,
+                                targetedView: UIView,
+                                didSelect item: ContextMenuItem,
+                                forRowAt index: Int) {
+    }
+    
+    /**
+     コンテキストメニューが表示されたら呼ばれる
+     */
+    func contextMenuDidAppear(_ contextMenu: ContextMenu) {
+        print("コンテキストメニューが表示された!")
+    }
+    
+    /**
+     コンテキストメニューが消えたら呼ばれる
+     */
+    func contextMenuDidDisappear(_ contextMenu: ContextMenu) {
+        print("コンテキストメニューが消えた!")
+    }
+    
+    
+}
+
+
