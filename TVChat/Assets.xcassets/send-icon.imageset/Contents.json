@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "send-icon.png",
+      "filename" : "icons8-email-send-48.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "send-icon-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "send-icon-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

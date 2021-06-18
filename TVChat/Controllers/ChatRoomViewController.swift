@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class ChatRoomViewController: UIViewController, UISearchBarDelegate {
-    var countKeybord:Int = 3
+    var countKeybord:Int = 0
     var searchBarButtonItem: UIBarButtonItem!      // +ボタン
     var tv: Tv?
     var searchText: String = ""
@@ -73,7 +73,14 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
     // 検索ボタンが押された時の処理
     @objc func searchBarButtonTapped(_ sender: UIBarButtonItem) {
         print("検索ボタンが押された!")
-        setSearchBar()
+  //検索バーがなければ初回は検索バーを表示し、あれば、メッセージの検索を行う
+//        if self.navigationItem.title = tv?.tvName{
+         setSearchBar()
+//        } else {
+//            searchBarSearchButtonClicked(<#T##searchBar: UISearchBar##UISearchBar#>)
+//        }
+        
+        
     }
     
 //検索バーの設置
@@ -150,11 +157,10 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
         guard let userInfo = notification.userInfo else { return }
         
         print("debug:KeyboadShow", countKeybord)
-        if countKeybord == 0 || countKeybord == 2 || countKeybord == 3{
             if let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).cgRectValue {
-            
-                if keyboardFrame.height <= accessoryHeight { return }
-            
+                
+                if keyboardFrame.height <= accessoryHeight || countKeybord == 1{ return }
+                print("debug:keyboard:" ,keyboardFrame.height)
                 let top = keyboardFrame.height - safeAreaBottom
                 var moveY = -(top - chatRoomTableView.contentOffset.y)
                 // 最下部以外の時は少しずれるので微調整
@@ -166,16 +172,9 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
                 print("debug:countKeyboardShow", countKeybord)
                 print("debug:KeyboadShow2")
                 chatRoomTableView.contentOffset = CGPoint(x: 0, y: moveY)
-                
-            }
-            
-            if  countKeybord == 3 {
-                countKeybord = 2
-            } else if countKeybord == 2 {
-                countKeybord = 0
-            } else {
-                countKeybord = 1
-            }
+                if keyboardFrame.height >= 350 {
+                    countKeybord = 1
+                }
             
         }
         
@@ -185,8 +184,8 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
         print("debug:KeyboadHide")
         chatRoomTableView.contentInset = tableViewContentInset
         chatRoomTableView.scrollIndicatorInsets = tableViewIndicatorInset
+        countKeybord = 0
         print("debug:countKeyboardHide", countKeybord)
-        countKeybord = 2
     }
     
     override var inputAccessoryView: UIView? { chatInputAccessoryView }
