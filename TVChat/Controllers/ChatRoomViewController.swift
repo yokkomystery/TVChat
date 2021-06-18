@@ -73,13 +73,11 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
     // 検索ボタンが押された時の処理
     @objc func searchBarButtonTapped(_ sender: UIBarButtonItem) {
         print("検索ボタンが押された!")
-  //検索バーがなければ初回は検索バーを表示し、あれば、メッセージの検索を行う
-//        if self.navigationItem.title = tv?.tvName{
-         setSearchBar()
-//        } else {
-//            searchBarSearchButtonClicked(<#T##searchBar: UISearchBar##UISearchBar#>)
-//        }
-        
+    // 検索アイコンを消す
+        self.searchBarButtonItem.isEnabled = false
+        self.searchBarButtonItem.tintColor = UIColor.clear
+        setSearchBar()
+        navigationItem.rightBarButtonItems?.removeAll()
         
     }
     
@@ -106,6 +104,8 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         //キャンセルボタンを表示
         searchBar.setShowsCancelButton(true, animated: true)
+        // テキストビューの処理が終わったあとに使ってるViewControllerで以下を発動し、message入力画面を再表示
+        self.becomeFirstResponder()
         return true
     }
     
@@ -123,6 +123,17 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
         fetchMessages()
         // テキストビューの処理が終わったあとに使ってるViewControllerで以下を発動し、message入力画面を再表示
         self.becomeFirstResponder()
+//        検索アイコンを再表示
+        self.searchBarButtonItem.isEnabled = true
+        self.searchBarButtonItem.tintColor = UIColor.init(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
+        
+        // 検索バーアイテムの初期化
+        searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchBarButtonTapped(_:)))
+        // ③検索バーボタンアイテムの追加
+        self.navigationItem.rightBarButtonItems = [searchBarButtonItem]
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(textFieldDidChange(notification:)),name: UITextView.textDidChangeNotification,
+                                               object: chatInputAccessoryView.name)
     }
     
     //検索バーでEnterが押された時
@@ -135,6 +146,7 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
         messages.removeAll()
         searchMessages()
         self.chatRoomTableView.reloadData()
+
     }
     
     private func setupNotification() {
@@ -206,7 +218,7 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
                 print("メッセージ情報の取得に失敗しました。\(err)")
                 return
             }
-            
+        self.messages.removeAll()
         snapshots?.documentChanges.forEach({ (documentChange) in
             switch documentChange.type {
             case .added:
@@ -263,7 +275,8 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate {
                 print("nothing to do")
             }
         })
-    }
+            
+        }
     }
     
     
@@ -280,12 +293,12 @@ extension ChatRoomViewController: ChatInputAccessoryViewDelegate {
     func tappedSendButton(text: String, name: String) {
         addMessageToFirestore(text: text, name: name)
         print("name, \(name)", text)
+        messages.removeAll()
+        fetchMessages()
     }
     
     private func addMessageToFirestore(text: String, name: String) {
         guard let tvDocId = tv?.documentId else { return }
-        print("tvDocId:, \(tvDocId)","id:, \(text)")
-//        guard let id = tv?.id else { return }
         print("tvDocId:, \(tvDocId)","id:, \(text)")
         chatInputAccessoryView.removeText()
         let messageId = randomString(length: 20)
@@ -316,6 +329,7 @@ extension ChatRoomViewController: ChatInputAccessoryViewDelegate {
                 
             }
         }
+        
         
     }
     
@@ -352,6 +366,7 @@ extension ChatRoomViewController: UITableViewDelegate, UITableViewDataSource {
         if messages.count != 0 {
             cell.message = messages[indexPath.row]
         }
+        
         return cell
     }
     
