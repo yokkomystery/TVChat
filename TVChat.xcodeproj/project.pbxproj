@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24BAAE6EE99B2820457742DF /* Pods_TVChat_TVChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D0D0182677F858978B40F6 /* Pods_TVChat_TVChatUITests.framework */; };
-		7514D2EA8C446CB63156DFFA /* Pods_TVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369C84EE97764D68118CD322 /* Pods_TVChat.framework */; };
+		29F4EA3B5DE6FD39E615D2E5 /* Pods_TVChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CCF3C56CEE6732D6072F0D /* Pods_TVChatTests.framework */; };
 		7C44B19A25AC246B0002E39A /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44B19925AC246B0002E39A /* UIColor-Extension.swift */; };
 		7C44B1A825AC26500002E39A /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C44B1A725AC26500002E39A /* ChatRoom.storyboard */; };
 		7C44B1AD25AC26AC0002E39A /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44B1AC25AC26AC0002E39A /* ChatRoomViewController.swift */; };
@@ -22,14 +21,19 @@
 		7CDAEB1A244DECE900895FB7 /* TVChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDAEB19244DECE900895FB7 /* TVChatUITests.swift */; };
 		7CDAEB28244DED8400895FB7 /* ChatList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDAEB27244DED8400895FB7 /* ChatList.storyboard */; };
 		7CDAEB2A244DEDF400895FB7 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDAEB29244DEDF400895FB7 /* ChatListViewController.swift */; };
-		9BCFC68BA7E61DC1AA955526 /* Pods_TVChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF086119074C4820B656480 /* Pods_TVChatTests.framework */; };
+		7DBB68A3FF098239636B5784 /* Pods_TVChat_TVChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D462C3BE60A6E41531FFF14D /* Pods_TVChat_TVChatUITests.framework */; };
+		9677E3BD2A60A0B98F0B7316 /* Pods_TVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437B80A5B180982AF6A77062 /* Pods_TVChat.framework */; };
+		EA296643290667E500F65992 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296641290667E500F65992 /* SettingViewController.swift */; };
+		EA296644290667E500F65992 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296642290667E500F65992 /* HomeViewController.swift */; };
+		EA296649290669C600F65992 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296647290669C600F65992 /* HomeViewController.swift */; };
+		EA29664B290669C600F65992 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296648290669C600F65992 /* SettingViewController.swift */; };
+		EA29664D29066A1500F65992 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA29664C29066A1500F65992 /* TabBarViewController.swift */; };
 		EA35386F2674F87F00413954 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35386E2674F87F00413954 /* TV.swift */; };
 		EA3538742675037A00413954 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3538732675037A00413954 /* ChatRoom.swift */; };
 		EA3538762675195300413954 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3538752675195300413954 /* Message.swift */; };
+		EA7439052904F6BF00048F44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA7439042904F6BF00048F44 /* GoogleService-Info.plist */; };
 		EAD95F2D266CE694002C5032 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD95F2C266CE694002C5032 /* ChatInputAccessoryView.xib */; };
 		EAD95F35266CE765002C5032 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD95F34266CE765002C5032 /* ChatInputAccessoryView.swift */; };
-		EAD95F43266D0F83002C5032 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAD95F42266D0F82002C5032 /* GoogleService-Info.plist */; };
-		EAD95F68266D12D0002C5032 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CDAEB05244DECE900895FB7 /* Info.plist */; };
 		EAD95F79266D130E002C5032 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CDAEB1B244DECE900895FB7 /* Info.plist */; };
 		EAD95F83266D1314002C5032 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CDAEB10244DECE900895FB7 /* Info.plist */; };
 		EAD95F88266D1318002C5032 /* TVChatTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 7CDAEB0A244DECE900895FB7 /* TVChatTests.xctest */; };
@@ -54,9 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		369C84EE97764D68118CD322 /* Pods_TVChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B039A5628F28835274E8999 /* Pods-TVChat-TVChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat-TVChatUITests.release.xcconfig"; path = "Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		78EA8EE60CAD341BD8540A31 /* Pods-TVChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat.release.xcconfig"; path = "Target Support Files/Pods-TVChat/Pods-TVChat.release.xcconfig"; sourceTree = "<group>"; };
+		25933B05530B0DCA3AD4944B /* Pods-TVChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat.release.xcconfig"; path = "Target Support Files/Pods-TVChat/Pods-TVChat.release.xcconfig"; sourceTree = "<group>"; };
+		27CCF3C56CEE6732D6072F0D /* Pods_TVChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437B80A5B180982AF6A77062 /* Pods_TVChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C44B19925AC246B0002E39A /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		7C44B1A725AC26500002E39A /* ChatRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
 		7C44B1AC25AC26AC0002E39A /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
@@ -76,18 +80,23 @@
 		7CDAEB1B244DECE900895FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CDAEB27244DED8400895FB7 /* ChatList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatList.storyboard; sourceTree = "<group>"; };
 		7CDAEB29244DEDF400895FB7 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
-		7F749CA53EBF32F1C28A4590 /* Pods-TVChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChatTests.release.xcconfig"; path = "Target Support Files/Pods-TVChatTests/Pods-TVChatTests.release.xcconfig"; sourceTree = "<group>"; };
-		862458678B8CD0C16F05081B /* Pods-TVChat-TVChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat-TVChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8777DC5852D4A38AC4C3F26 /* Pods-TVChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChatTests.debug.xcconfig"; path = "Target Support Files/Pods-TVChatTests/Pods-TVChatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AEF086119074C4820B656480 /* Pods_TVChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6D0D0182677F858978B40F6 /* Pods_TVChat_TVChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChat_TVChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E492AE8F35DCE4B8DE324A03 /* Pods-TVChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat.debug.xcconfig"; path = "Target Support Files/Pods-TVChat/Pods-TVChat.debug.xcconfig"; sourceTree = "<group>"; };
+		8131B946357BEE19A9B98615 /* Pods-TVChat-TVChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat-TVChatUITests.release.xcconfig"; path = "Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8AAEFD927CBB003B865B8F07 /* Pods-TVChat-TVChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat-TVChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BF22A6DD8C05548E38C8BA4 /* Pods-TVChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChatTests.debug.xcconfig"; path = "Target Support Files/Pods-TVChatTests/Pods-TVChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D462C3BE60A6E41531FFF14D /* Pods_TVChat_TVChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChat_TVChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86AB767AAEF4E85AF7803D4 /* Pods-TVChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat.debug.xcconfig"; path = "Target Support Files/Pods-TVChat/Pods-TVChat.debug.xcconfig"; sourceTree = "<group>"; };
+		EA296641290667E500F65992 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EA296642290667E500F65992 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA296647290669C600F65992 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA296648290669C600F65992 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EA29664C29066A1500F65992 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		EA35386E2674F87F00413954 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		EA3538732675037A00413954 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		EA3538752675195300413954 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EA7439042904F6BF00048F44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EA8EBD6599B8E8C4A10EF81A /* Pods-TVChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChatTests.release.xcconfig"; path = "Target Support Files/Pods-TVChatTests/Pods-TVChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAD95F2C266CE694002C5032 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		EAD95F34266CE765002C5032 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
-		EAD95F42266D0F82002C5032 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7514D2EA8C446CB63156DFFA /* Pods_TVChat.framework in Frameworks */,
+				9677E3BD2A60A0B98F0B7316 /* Pods_TVChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCFC68BA7E61DC1AA955526 /* Pods_TVChatTests.framework in Frameworks */,
+				29F4EA3B5DE6FD39E615D2E5 /* Pods_TVChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,16 +120,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24BAAE6EE99B2820457742DF /* Pods_TVChat_TVChatUITests.framework in Frameworks */,
+				7DBB68A3FF098239636B5784 /* Pods_TVChat_TVChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E68A856E391BA21A0321E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				437B80A5B180982AF6A77062 /* Pods_TVChat.framework */,
+				D462C3BE60A6E41531FFF14D /* Pods_TVChat_TVChatUITests.framework */,
+				27CCF3C56CEE6732D6072F0D /* Pods_TVChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C35901925AC23CE00E53A59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA296641290667E500F65992 /* SettingViewController.swift */,
+				EA296648290669C600F65992 /* SettingViewController.swift */,
+				EA296642290667E500F65992 /* HomeViewController.swift */,
+				EA29664C29066A1500F65992 /* TabBarViewController.swift */,
+				EA296647290669C600F65992 /* HomeViewController.swift */,
 				7CDAEB29244DEDF400895FB7 /* ChatListViewController.swift */,
 				7C44B1AC25AC26AC0002E39A /* ChatRoomViewController.swift */,
 			);
@@ -144,7 +168,7 @@
 				7CDAEB18244DECE900895FB7 /* TVChatUITests */,
 				7CDAEAF5244DECE800895FB7 /* Products */,
 				C6D6C11587EC72C0D6ABFFEA /* Pods */,
-				F01C8FACB41F1DFB868F6005 /* Frameworks */,
+				2E68A856E391BA21A0321E7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +195,8 @@
 				7CDAEAF9244DECE800895FB7 /* SceneDelegate.swift */,
 				7CDAEB00244DECE900895FB7 /* Assets.xcassets */,
 				7CDAEB02244DECE900895FB7 /* LaunchScreen.storyboard */,
+				EA7439042904F6BF00048F44 /* GoogleService-Info.plist */,
 				7CDAEB05244DECE900895FB7 /* Info.plist */,
-				EAD95F42266D0F82002C5032 /* GoogleService-Info.plist */,
 			);
 			path = TVChat;
 			sourceTree = "<group>";
@@ -198,12 +222,12 @@
 		C6D6C11587EC72C0D6ABFFEA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E492AE8F35DCE4B8DE324A03 /* Pods-TVChat.debug.xcconfig */,
-				78EA8EE60CAD341BD8540A31 /* Pods-TVChat.release.xcconfig */,
-				862458678B8CD0C16F05081B /* Pods-TVChat-TVChatUITests.debug.xcconfig */,
-				3B039A5628F28835274E8999 /* Pods-TVChat-TVChatUITests.release.xcconfig */,
-				A8777DC5852D4A38AC4C3F26 /* Pods-TVChatTests.debug.xcconfig */,
-				7F749CA53EBF32F1C28A4590 /* Pods-TVChatTests.release.xcconfig */,
+				E86AB767AAEF4E85AF7803D4 /* Pods-TVChat.debug.xcconfig */,
+				25933B05530B0DCA3AD4944B /* Pods-TVChat.release.xcconfig */,
+				8AAEFD927CBB003B865B8F07 /* Pods-TVChat-TVChatUITests.debug.xcconfig */,
+				8131B946357BEE19A9B98615 /* Pods-TVChat-TVChatUITests.release.xcconfig */,
+				8BF22A6DD8C05548E38C8BA4 /* Pods-TVChatTests.debug.xcconfig */,
+				EA8EBD6599B8E8C4A10EF81A /* Pods-TVChatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -244,16 +268,6 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
-		F01C8FACB41F1DFB868F6005 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				369C84EE97764D68118CD322 /* Pods_TVChat.framework */,
-				D6D0D0182677F858978B40F6 /* Pods_TVChat_TVChatUITests.framework */,
-				AEF086119074C4820B656480 /* Pods_TVChatTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,11 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CDAEB1E244DECE900895FB7 /* Build configuration list for PBXNativeTarget "TVChat" */;
 			buildPhases = (
-				7043E943F60486CBE841B7A4 /* [CP] Check Pods Manifest.lock */,
+				54250AECBDE01052F2D16CC2 /* [CP] Check Pods Manifest.lock */,
 				7CDAEAF0244DECE800895FB7 /* Sources */,
 				7CDAEAF1244DECE800895FB7 /* Frameworks */,
 				7CDAEAF2244DECE800895FB7 /* Resources */,
-				89D13D8000FB8054D2A2BECD /* [CP] Embed Pods Frameworks */,
+				A3546923EB153B96349811D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,7 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CDAEB21244DECE900895FB7 /* Build configuration list for PBXNativeTarget "TVChatTests" */;
 			buildPhases = (
-				FA61BE445449D68FA8051B8B /* [CP] Check Pods Manifest.lock */,
+				E030471FEC36213F6EAB2C14 /* [CP] Check Pods Manifest.lock */,
 				7CDAEB06244DECE900895FB7 /* Sources */,
 				7CDAEB07244DECE900895FB7 /* Frameworks */,
 				7CDAEB08244DECE900895FB7 /* Resources */,
@@ -299,11 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CDAEB24244DECE900895FB7 /* Build configuration list for PBXNativeTarget "TVChatUITests" */;
 			buildPhases = (
-				96CF6F40CBD700D0593D857E /* [CP] Check Pods Manifest.lock */,
+				4288F591ABF674904D0A3F3B /* [CP] Check Pods Manifest.lock */,
 				7CDAEB11244DECE900895FB7 /* Sources */,
 				7CDAEB12244DECE900895FB7 /* Frameworks */,
 				7CDAEB13244DECE900895FB7 /* Resources */,
-				16FE3F88B766EE7C0E6D3AD7 /* [CP] Embed Pods Frameworks */,
+				8CAE29B82C3907ECD1A106A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,7 +337,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = Uske;
+				ORGANIZATIONNAME = com.yokkoapp;
 				TargetAttributes = {
 					7CDAEAF3244DECE800895FB7 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -339,7 +353,7 @@
 				};
 			};
 			buildConfigurationList = 7CDAEAEF244DECE800895FB7 /* Build configuration list for PBXProject "TVChat" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -363,14 +377,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD95F68266D12D0002C5032 /* Info.plist in Resources */,
 				7CA46BFE25AC28F80017E1AE /* ChatRoomTableViewCell.xib in Resources */,
 				7CDAEB04244DECE900895FB7 /* LaunchScreen.storyboard in Resources */,
 				7CDAEB01244DECE900895FB7 /* Assets.xcassets in Resources */,
 				7CDAEB28244DED8400895FB7 /* ChatList.storyboard in Resources */,
 				EAD95F2D266CE694002C5032 /* ChatInputAccessoryView.xib in Resources */,
 				7C44B1A825AC26500002E39A /* ChatRoom.storyboard in Resources */,
-				EAD95F43266D0F83002C5032 /* GoogleService-Info.plist in Resources */,
+				EA7439052904F6BF00048F44 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,63 +408,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16FE3F88B766EE7C0E6D3AD7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7043E943F60486CBE841B7A4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TVChat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89D13D8000FB8054D2A2BECD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TVChat/Pods-TVChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TVChat/Pods-TVChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVChat/Pods-TVChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96CF6F40CBD700D0593D857E /* [CP] Check Pods Manifest.lock */ = {
+		4288F591ABF674904D0A3F3B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -473,7 +430,63 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA61BE445449D68FA8051B8B /* [CP] Check Pods Manifest.lock */ = {
+		54250AECBDE01052F2D16CC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CAE29B82C3907ECD1A106A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVChat-TVChatUITests/Pods-TVChat-TVChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3546923EB153B96349811D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVChat/Pods-TVChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVChat/Pods-TVChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVChat/Pods-TVChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E030471FEC36213F6EAB2C14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,15 +516,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3538742675037A00413954 /* ChatRoom.swift in Sources */,
+				EA296643290667E500F65992 /* SettingViewController.swift in Sources */,
 				7CDAEAF8244DECE800895FB7 /* AppDelegate.swift in Sources */,
 				EAD95F35266CE765002C5032 /* ChatInputAccessoryView.swift in Sources */,
 				7C44B19A25AC246B0002E39A /* UIColor-Extension.swift in Sources */,
+				EA29664B290669C600F65992 /* SettingViewController.swift in Sources */,
 				7C44B1AD25AC26AC0002E39A /* ChatRoomViewController.swift in Sources */,
 				7CDAEB2A244DEDF400895FB7 /* ChatListViewController.swift in Sources */,
 				EA35386F2674F87F00413954 /* TV.swift in Sources */,
 				EA3538762675195300413954 /* Message.swift in Sources */,
 				7CA46C0625AC29F90017E1AE /* ChatRoomTableViewCell.swift in Sources */,
 				7CDAEAFA244DECE800895FB7 /* SceneDelegate.swift in Sources */,
+				EA296649290669C600F65992 /* HomeViewController.swift in Sources */,
+				EA29664D29066A1500F65992 /* TabBarViewController.swift in Sources */,
+				EA296644290667E500F65992 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +602,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -644,6 +663,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -674,49 +694,62 @@
 		};
 		7CDAEB1F244DECE900895FB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E492AE8F35DCE4B8DE324A03 /* Pods-TVChat.debug.xcconfig */;
+			baseConfigurationReference = E86AB767AAEF4E85AF7803D4 /* Pods-TVChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HW83P5YBNH;
+				DEVELOPMENT_TEAM = VV7L2S3Q4K;
 				INFOPLIST_FILE = "$(SRCROOT)/TVChat/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hoshizora51.TVChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokkoapp.tvchat.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7CDAEB20244DECE900895FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78EA8EE60CAD341BD8540A31 /* Pods-TVChat.release.xcconfig */;
+			baseConfigurationReference = 25933B05530B0DCA3AD4944B /* Pods-TVChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HW83P5YBNH;
+				DEVELOPMENT_TEAM = VV7L2S3Q4K;
 				INFOPLIST_FILE = "$(SRCROOT)/TVChat/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hoshizora51.TVChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokkoapp.tvchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		7CDAEB22244DECE900895FB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8777DC5852D4A38AC4C3F26 /* Pods-TVChatTests.debug.xcconfig */;
+			baseConfigurationReference = 8BF22A6DD8C05548E38C8BA4 /* Pods-TVChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChatWithFirebaseUntil5Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -726,19 +759,23 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Uske.ChatWithFirebaseUntil5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVChat.app/TVChat";
 			};
 			name = Debug;
 		};
 		7CDAEB23244DECE900895FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F749CA53EBF32F1C28A4590 /* Pods-TVChatTests.release.xcconfig */;
+			baseConfigurationReference = EA8EBD6599B8E8C4A10EF81A /* Pods-TVChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChatWithFirebaseUntil5Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -748,15 +785,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Uske.ChatWithFirebaseUntil5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVChat.app/TVChat";
 			};
 			name = Release;
 		};
 		7CDAEB25244DECE900895FB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 862458678B8CD0C16F05081B /* Pods-TVChat-TVChatUITests.debug.xcconfig */;
+			baseConfigurationReference = 8AAEFD927CBB003B865B8F07 /* Pods-TVChat-TVChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -776,7 +816,7 @@
 		};
 		7CDAEB26244DECE900895FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B039A5628F28835274E8999 /* Pods-TVChat-TVChatUITests.release.xcconfig */;
+			baseConfigurationReference = 8131B946357BEE19A9B98615 /* Pods-TVChat-TVChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,7 +844,7 @@
 				7CDAEB1D244DECE900895FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7CDAEB1E244DECE900895FB7 /* Build configuration list for PBXNativeTarget "TVChat" */ = {
 			isa = XCConfigurationList;
@@ -813,7 +853,7 @@
 				7CDAEB20244DECE900895FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7CDAEB21244DECE900895FB7 /* Build configuration list for PBXNativeTarget "TVChatTests" */ = {
 			isa = XCConfigurationList;
@@ -822,7 +862,7 @@
 				7CDAEB23244DECE900895FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7CDAEB24244DECE900895FB7 /* Build configuration list for PBXNativeTarget "TVChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -831,7 +871,7 @@
 				7CDAEB26244DECE900895FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

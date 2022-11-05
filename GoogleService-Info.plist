@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>729957319231-placg52q0p576gi88giu42orgp70ukb9.apps.googleusercontent.com</string>
+	<string>729957319231-5n4mgj38g1gfvci88laf51pr0pd64snr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.729957319231-placg52q0p576gi88giu42orgp70ukb9</string>
+	<string>com.googleusercontent.apps.729957319231-5n4mgj38g1gfvci88laf51pr0pd64snr</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB7MYubRakPBvcxB7h-BUjq9lxI5FOVdyA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>hoshizora51.TVChat</string>
+	<string>com.yokkoapp.tvchat.staging</string>
 	<key>PROJECT_ID</key>
 	<string>hoshizora51-dev</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:729957319231:ios:f1675b799dda0d995aee8a</string>
+	<string>1:729957319231:ios:683f407de17040635aee8a</string>
 	<key>DATABASE_URL</key>
 	<string>https://hoshizora51-dev-default-rtdb.firebaseio.com</string>
 </dict>

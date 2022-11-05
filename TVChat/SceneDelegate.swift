@@ -18,13 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene as! UIWindowScene)
         self.window = window
         window.makeKeyAndVisible()
-        
+        // Storyboard の場合
         let storyboard = UIStoryboard(name: "ChatList", bundle: nil)
-        let chatListViewController = storyboard.instantiateViewController(identifier: "ChatListViewController")
-        let nav = UINavigationController(rootViewController: chatListViewController)
-        
-        window.rootViewController = nav
-        guard let _ = (scene as? UIWindowScene) else { return }
+        let vc = storyboard.instantiateViewController(identifier: "HomeViewController")
+// Viewをコードで書いている場合
+// let vc = SecondViewController()
+
+    window.rootViewController = vc
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

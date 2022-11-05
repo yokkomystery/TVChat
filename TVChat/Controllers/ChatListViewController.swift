@@ -115,11 +115,13 @@ class ChatListViewController: UIViewController {
         chatListTableView.tableFooterView = UIView()
         chatListTableView.delegate = self
         chatListTableView.dataSource = self
-        
-        navigationController?.navigationBar.barTintColor = .rgb(red: 39, green: 49, blue: 69)
         navigationItem.title = "番組一覧"
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        
+        self.navigationController?.navigationBar.backgroundColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            // 文字の色
+            .foregroundColor: UIColor.white
+        ]
     }
 }
 
