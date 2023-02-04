@@ -212,6 +212,8 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate, UIGestureRe
         countKeybord = 0
         print("debug:countKeyboardHide", countKeybord)
     }
+    
+//    ミュート機能 (1.0.0では利用しない)
     @objc func cellLongPressed(_ recognizer: UILongPressGestureRecognizer) {
 
         // 押された位置でcellのPathを取得
@@ -227,15 +229,17 @@ class ChatRoomViewController: UIViewController, UISearchBarDelegate, UIGestureRe
             // 長押しされた場合の処理
                 
             //コンテキストメニューの内容を作成します
-            let mute = ContextMenuItemWithImage(title: "ミュート", image: UIImage(systemName: "speaker.slash.circle.fill")!)
-//            let delete = ContextMenuItemWithImage(title: "削除", image: UIImage(systemName: "trash")!)
+//            let mute = ContextMenuItemWithImage(title: "ミュート", image: UIImage(systemName: "speaker.slash.circle.fill")!)
+//
+            //ミュート押下時の処理
+            
                 
          //コンテキストメニューに表示するアイテムを決定します
-            CM.items = [mute]
+//            CM.items = [mute]
         //表示します
-            CM.showMenu(viewTargeted: chatRoomTableView.cellForRow(at: indexPath!)!,
-                        delegate: self,
-                        animated: true)
+//            CM.showMenu(viewTargeted: chatRoomTableView.cellForRow(at: indexPath!)!,
+//                        delegate: self,
+//                        animated: true)
                 
         }
     }

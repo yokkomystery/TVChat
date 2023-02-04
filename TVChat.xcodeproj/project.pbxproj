@@ -23,7 +23,6 @@
 		7CDAEB2A244DEDF400895FB7 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDAEB29244DEDF400895FB7 /* ChatListViewController.swift */; };
 		7DBB68A3FF098239636B5784 /* Pods_TVChat_TVChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D462C3BE60A6E41531FFF14D /* Pods_TVChat_TVChatUITests.framework */; };
 		9677E3BD2A60A0B98F0B7316 /* Pods_TVChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437B80A5B180982AF6A77062 /* Pods_TVChat.framework */; };
-		EA296643290667E500F65992 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296641290667E500F65992 /* SettingViewController.swift */; };
 		EA296644290667E500F65992 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296642290667E500F65992 /* HomeViewController.swift */; };
 		EA296649290669C600F65992 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296647290669C600F65992 /* HomeViewController.swift */; };
 		EA29664B290669C600F65992 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA296648290669C600F65992 /* SettingViewController.swift */; };
@@ -85,7 +84,6 @@
 		8BF22A6DD8C05548E38C8BA4 /* Pods-TVChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChatTests.debug.xcconfig"; path = "Target Support Files/Pods-TVChatTests/Pods-TVChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D462C3BE60A6E41531FFF14D /* Pods_TVChat_TVChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVChat_TVChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86AB767AAEF4E85AF7803D4 /* Pods-TVChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVChat.debug.xcconfig"; path = "Target Support Files/Pods-TVChat/Pods-TVChat.debug.xcconfig"; sourceTree = "<group>"; };
-		EA296641290667E500F65992 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA296642290667E500F65992 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA296647290669C600F65992 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA296648290669C600F65992 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		7C35901925AC23CE00E53A59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA296641290667E500F65992 /* SettingViewController.swift */,
 				EA296648290669C600F65992 /* SettingViewController.swift */,
 				EA296642290667E500F65992 /* HomeViewController.swift */,
 				EA29664C29066A1500F65992 /* TabBarViewController.swift */,
@@ -516,7 +513,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3538742675037A00413954 /* ChatRoom.swift in Sources */,
-				EA296643290667E500F65992 /* SettingViewController.swift in Sources */,
 				7CDAEAF8244DECE800895FB7 /* AppDelegate.swift in Sources */,
 				EAD95F35266CE765002C5032 /* ChatInputAccessoryView.swift in Sources */,
 				7C44B19A25AC246B0002E39A /* UIColor-Extension.swift in Sources */,
